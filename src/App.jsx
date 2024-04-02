@@ -1,17 +1,39 @@
 import React from "react";
+import {
+  Hero,
+  CustomerReviews,
+  PopularProducts,
+  Footer,
+  Services,
+  Subscribe,
+  SuperQuality,
+} from "./sections";
 
 const App = () => {
   return (
     <div className="relative">
       Nav
-      <section className="xl:padding-1 wide:padding-r">hero </section>
-      <section className="padding">Popular products</section>
-      <section className="padding">Super Quality</section>
-      <section className="padding">Services</section>
-      <section className="padding">Special Offer</section>
-      <section className="padding bg-pale-blue">Customer Reviews</section>
-      <section className="padding-x py-16 w-full">Subscribe</section>
-      <section className="padding bg-black padding-x padding-t">Footer</section>
+      <section className="xl:padding-1 wide:padding-r">
+        <Hero />{" "}
+      </section>
+      <section className="padding">
+        <PopularProducts />
+      </section>
+      <section className="padding">
+        <SuperQuality />
+      </section>
+      <section className="padding">
+        <Services />
+      </section>
+      <section className="padding bg-pale-blue">
+        <CustomerReviews />
+      </section>
+      <section className="padding">
+        <Subscribe />
+      </section>{" "}
+      <section className="padding bg-black padding-x padding-t">
+        <Footer />
+      </section>
     </div>
   );
 };
