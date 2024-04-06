@@ -10,8 +10,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col border-2 padding-x
-       border-red-500  min-h-screen max-container "
+      className="w-full flex xl:flex-row flex-col  padding-x
+         min-h-screen max-container "
     >
       <div
         className="relative xl:w-2/5 flex flex-col justify-center
