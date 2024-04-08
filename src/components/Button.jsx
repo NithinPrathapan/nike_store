@@ -11,7 +11,7 @@ const Button = ({ label, iconURL }) => {
      border-coral-red bg-coral-red "
     >
       {label}
-      <img src={iconURL} alt="icon" />
+      {iconURL && <img src={iconURL} alt="icon" />}
     </button>
   );
 };
