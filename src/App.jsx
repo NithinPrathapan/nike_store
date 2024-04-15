@@ -7,6 +7,7 @@ import {
   Services,
   Subscribe,
   SuperQuality,
+  SpecialOffer
 } from "./sections";
 import Nav from "./components/Nav";
 
@@ -25,6 +26,9 @@ const App = () => {
       </section>
       <section className="padding">
         <Services />
+      </section>
+      <section className="padding">
+        <SpecialOffer />
       </section>
       <section className="padding bg-pale-blue">
         <CustomerReviews />
