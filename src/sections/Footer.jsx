@@ -15,8 +15,8 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-5 mt-8">
             {socialMedia.map((icon) => (
-              <div className="flex justify-center">
-                <img src={icon.src} alt="icon" width={24} height={24} />
+              <div key={icon.src} className="flex justify-center">
+                <img className="bg-white rounded-full p-1" src={icon.src} alt="icon" width={24} height={24} />
               </div>
             ))}
           </div>
@@ -24,11 +24,16 @@ const Footer = () => {
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section) => (
             <div key={section.title}>
-              <h3 className="text-white text-2xl leading-normal font-medium mb-6">{section.title}</h3>
+              <h3 className="text-white text-2xl leading-normal font-medium mb-6">
+                {section.title}
+              </h3>
               <ul>
                 {section.links.map((item) => (
-                  <li className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer">
-                    <a href="">{item.name}</a>
+                  <li
+                    key={item.name}
+                    className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
+                  >
+                    <a href={item.link}>{item.name}</a>
                   </li>
                 ))}
               </ul>
